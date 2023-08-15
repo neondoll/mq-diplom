@@ -363,26 +363,49 @@
     </address>
     <a class="footer__copyright" href="#">Copyright © 2009–2019 City Blog LLC.</a>
 </footer>
-<article class="popup container">
+<article class="popup container hidden">
     <section class="popup__container">
         <h2 class="popup__title section-title">Ваш ФИДБЕк</h2>
         <form class="popup__form">
-            <label class="popup__label" for="popup-select">Как часто вы заходите на сайт?</label>
-            <select class="popup__select select" id="popup-select">
-                <option>Почти каждый день</option>
-                <option>Раз в несколько дней</option>
-                <option>Раз в несколько недель</option>
-                <option>Несколько раз в год</option>
-            </select>
-            <fieldset>
-                <legend>Choose your favorite monster</legend>
-                <input id="kraken" name="monster" type="radio" value="K">
-                <label for="kraken">Kraken</label><br>
-                <input id="sasquatch" name="monster" type="radio" value="S">
-                <label for="sasquatch">Sasquatch</label><br>
-                <input id="mothman" name="monster" type="radio" value="M">
-                <label for="mothman">Mothman</label>
+            <div class="popup__form-group--1">
+                <label class="popup__label label" for="popup-select">Как часто вы заходите на сайт?</label>
+                <select class="popup__select select" id="popup-select">
+                    <option>Почти каждый день</option>
+                    <option>Раз в несколько дней</option>
+                    <option>Раз в несколько недель</option>
+                    <option>Несколько раз в год</option>
+                </select>
+            </div>
+            <fieldset class="popup__form-group--2">
+                <legend class="popup__label label">Вы подписаны на e-mail рассылку?</legend>
+                <div class="popup__radio-group">
+                    <div>
+                        <input class="popup__radio radio"
+                               checked
+                               id="popup-radio-yes"
+                               name="popup-radio"
+                               type="radio"
+                               value="yes">
+                        <label class="popup__label label" for="popup-radio-yes">Да</label>
+                    </div>
+                    <div>
+                        <input class="popup__radio radio"
+                               id="popup-radio-no"
+                               name="popup-radio"
+                               type="radio"
+                               value="no">
+                        <label class="popup__label label" for="popup-radio-no">Нет</label>
+                    </div>
+                </div>
             </fieldset>
+            <div class="popup__form-group--3">
+                <label class="popup__label label" for="popup-textarea">Расскажите, какой контент вы хотели бы видеть на
+                    нашем сайте?</label>
+                <textarea class="popup__textarea textarea"
+                          id="popup-textarea"
+                          placeholder="Может, больше рецептов?"></textarea>
+            </div>
+            <button class="popup__btn btn" type="submit">Отправить</button>
         </form>
     </section>
 </article>
