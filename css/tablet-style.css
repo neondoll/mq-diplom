@@ -1,0 +1,168 @@
+body {
+    width: 768px; /* tablet-version */
+}
+
+.header {
+    background-image: url("../images/banner-bg-tablet.jpg");
+}
+
+.container {
+    max-width: 768px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.header__container {
+    padding-top: 43px;
+    padding-bottom: 124px;
+}
+
+.navbar__link {
+    position: static;
+    transform: none;
+}
+
+.navbar__logo {
+    width: 158px;
+}
+
+.menu-navbar {
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.menu-navbar__btn-close {
+    margin-right: 0;
+}
+
+.header__title {
+    max-width: 611px;
+    margin-top: 103px;
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 1.3745;
+}
+
+.main {
+    margin-top: 47px;
+}
+
+.trends__title {
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.trends__title:after {
+    top: 31px;
+}
+
+.trends__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 3px 4px;
+    margin-top: 34px;
+}
+
+.item-trends {
+    min-height: 247px;
+}
+
+.item-trends__content {
+    margin: 15px 19px 15px 20px;
+    /*margin: 15px 21px 15px 19px;*/
+    /*margin: 15px 18px 15px 19px;*/
+    /*margin: 15px 19px 15px 21px;*/
+    /*margin: 15px 17px 15px 20px;*/
+    padding: 35px 58px 31.5px 30px;
+    /*padding: 35px 108px 30px 30px;*/
+    /*padding: 35px 64px 33px 30px;*/
+    /*padding: 35px 96px 30px 30px;*/
+    /*padding: 35px 60px 33px 31px;*/
+}
+
+.categories-item-trends__list {
+    padding-left: 2px;
+    column-gap: 19px;
+    /*column-gap: 20px;*/
+    /*column-gap: 18px;*/
+    /*column-gap: 19px;*/
+}
+
+.categories-item-trends__item {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.item-trends__title {
+    margin-top: 12.5px;
+    /*margin-top: 11px;*/
+    /*margin-top: 14px;*/
+    /*margin-top: 11px;*/
+    /*margin-top: 11px;*/
+    font-size: 17px;
+    line-height: 1.293529411764706; /* 21.99px */
+}
+
+.common-content {
+    flex-direction: row;
+    column-gap: 35px;
+    margin-top: 50px;
+}
+
+.cards {
+    row-gap: 42px;
+}
+
+.card {
+    margin-right: 0;
+    padding-bottom: 19px;
+}
+
+.card__content {
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.card__image + .card__content {
+    margin-top: 16px;
+}
+
+.tags-card__list {
+    column-gap: 19px;
+}
+
+.tags-card__item {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.card__title {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 1.293529411764706; /* 21.99px */
+}
+
+.card__subtitle {
+    margin-top: 37px;
+    margin-left: -1px;
+}
+
+.card__date, .card__author {
+    font-size: 12px;
+    line-height: 1;
+}
+
+.card__text {
+    margin-top: 33px;
+    margin-right: 0;
+}
+
+.text-card {
+    font-size: 15px;
+    line-height: 1.466666666666667; /* 22px */
+}
+
+.sidebar {
+    flex: 0 0 271px;
+}
