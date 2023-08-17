@@ -283,6 +283,7 @@ body {
 .common-content {
     display: flex;
     flex-direction: column;
+    row-gap: 41px;;
     margin-top: 44px;
 }
 
@@ -391,7 +392,6 @@ body {
 
 .sidebar {
     width: 100%;
-    margin-top: 41px;
 }
 
 .latest-posts {
