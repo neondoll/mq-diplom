@@ -162,7 +162,7 @@ body {
 
 .trends {}
 
-.section-title {
+.main-section__title, .sidebar-section__title {
     position: relative;
     font-size: 16px;
     font-weight: 700;
@@ -172,7 +172,7 @@ body {
     color: #0f0d0e;
 }
 
-.section-title:after {
+.main-section__title:after, .sidebar-section__title:after {
     content: "";
     position: absolute;
     top: 26px;
@@ -507,12 +507,15 @@ body {
 }
 
 .btn {
+    display: inline-block;
+    box-sizing: border-box;
     height: 48px;
     padding: 15px 18px 15px 18px;
     font-family: inherit;
     font-size: 14px;
     font-weight: 700;
     line-height: 1;
+    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #b59f5b;

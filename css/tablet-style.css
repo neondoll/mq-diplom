@@ -45,23 +45,34 @@ body {
 
 .main {
     margin-top: 47px;
+    margin-bottom: 51px;
 }
 
-.section-title {
-    font-size: 14px;
+.main-section__title {
+    font-size: 18px;
     line-height: 1;
 }
 
-.section-title:after {
-    top: 24px;
+.main-section__title:after, .sidebar-section__title:after {
     width: 66px;
     height: 3px;
 }
 
+.main-section__title:after {
+    top: 27px;
+}
+
+.sidebar-section__title {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.sidebar-section__title:after {
+    top: 24px;
+}
+
 .trends__title {
     margin-left: 0;
-    font-size: 18px;
-    line-height: 1;
 }
 
 .trends__title:after {
@@ -137,8 +148,7 @@ body {
 }
 
 .card:last-child {
-    padding-bottom: 0;
-    border-bottom: 0;
+    border-bottom-color: #ffffff;
 }
 
 .card__image {
@@ -412,4 +422,292 @@ body {
 
 .subscribe__btn {
     margin-top: 18px;
+}
+
+* + .tags {
+    margin-top: 61px;
+}
+
+.tags__list {
+    margin-top: 41px;
+    column-gap: 6px;
+    /*column-gap: 5px;*/
+    /*column-gap: 6px;*/
+    /*column-gap: 6px;*/
+    /*column-gap: 6px;*/
+    /*column-gap: 6px;*/
+    row-gap: 6px;
+}
+
+.tags__item {
+    font-size: 12px;
+    line-height: 1;
+}
+
+.tags__link {
+    padding-top: 7px;
+    /*padding-top: 8px;*/
+    /*padding-top: 7px;*/
+    /*padding-top: 7px;*/
+    /*padding-top: 7px;*/
+    /*padding-top: 7px;*/
+    /*padding-top: 8px;*/
+    /*padding-top: 8px;*/
+    /*padding-top: 7px;*/
+    padding-right: 13px;
+    /*padding-right: 14px;*/
+    /*padding-right: 16px;*/
+    /*padding-right: 13px;*/
+    /*padding-right: 15px;*/
+    /*padding-right: 10px;*/
+    /*padding-right: 13px;*/
+    /*padding-right: 12px;*/
+    /*padding-right: 11px;*/
+    padding-bottom: 7px;
+    /*padding-bottom: 6px;*/
+    /*padding-bottom: 7px;*/
+    /*padding-bottom: 7px;*/
+    /*padding-bottom: 7px;*/
+    /*padding-bottom: 7px;*/
+    /*padding-bottom: 6px;*/
+    /*padding-bottom: 6px;*/
+    /*padding-bottom: 7px;*/
+    padding-left: 13px;
+    /*padding-left: 13px;*/
+    /*padding-left: 15px;*/
+    /*padding-left: 13px;*/
+    /*padding-left: 14px;*/
+    /*padding-left: 11px;*/
+    /*padding-left: 13px;*/
+    /*padding-left: 13px;*/
+    /*padding-left: 13px;*/
+}
+
+* + .categories {
+    margin-top: 61px;
+}
+
+.categories__list {
+    padding-top: 42.5px; /* 58px - 15.5px */
+    margin-right: 1px;
+    margin-left: -1px;
+}
+
+.categories__item {
+    padding-top: 15.5px;
+    /*padding-top: 17px;*/
+    /*padding-top: 16px;*/
+    /*padding-top: 16px;*/
+    /*padding-top: 17px;*/
+    /*padding-top: 14px;*/
+    padding-bottom: 15px;
+    /*padding-bottom: 12px;*/
+    /*padding-bottom: 13px;*/
+    /*padding-bottom: 13px;*/
+    /*padding-bottom: 13px;*/
+    /*padding-bottom: 14px;*/
+    /*padding-bottom: 18px;*/
+    padding-left: 2px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.categories__sup {
+    margin-left: 4px;
+    /*margin-left: 4px;*/
+    /*margin-left: 5px;*/
+    /*margin-left: 4px;*/
+    /*margin-left: 4px;*/
+    /*margin-left: 5px;*/
+    /*margin-left: 3px;*/
+    font-size: 12px;
+    vertical-align: 5px;
+    /*vertical-align: 5px;*/
+    /*vertical-align: 5px;*/
+    /*vertical-align: 5px;*/
+    /*vertical-align: 5px;*/
+    /*vertical-align: 4px;*/
+    /*vertical-align: 0px;*/
+}
+
+.shop {
+    margin-top: 49px;
+}
+
+.shop__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 22px;
+    /*column-gap: 23px;*/
+    /*column-gap: 22px;*/
+    row-gap: 28px;
+    margin-top: 41px;
+    margin-right: 1px;
+    /*margin-right: 0;*/
+    /*margin-right: 1px;*/
+    /*margin-right: -1px;*/
+    margin-left: 0;
+    /*margin-left: -1px;*/
+    /*margin-left: 0px;*/
+    /*margin-left: 0px;*/
+}
+
+.item-shop__image {
+    padding-right: 24px;
+    /*padding-right: 24px;*/
+    /*padding-right: 23px;*/
+    /*padding-right: 24px;*/
+    padding-left: 23px;
+    /*padding-left: 23px;*/
+    /*padding-left: 22px;*/
+    /*padding-left: 23px;*/
+}
+
+.item-shop__content {
+    margin-top: -35px;
+    /*margin-top: -32px;*/
+    /*margin-top: -32px;*/
+    /*margin-top: -38px;*/
+    padding-top: 55px;
+    /*padding-top: 54px;*/
+    /*padding-top: 51px;*/
+    /*padding-top: 59px;*/
+    padding-right: 21px;
+    padding-bottom: 26px;
+    /*padding-bottom: 69px;*/
+    /*padding-bottom: 26px;*/
+    /*padding-bottom: 26px;*/
+    padding-left: 21px;
+    /*padding-left: 21px;*/
+    /*padding-left: 20px;*/
+    /*padding-left: 21px;*/
+}
+
+.item-shop__title {
+    font-size: 17px;
+    line-height: 1;
+}
+
+.item-shop__text {
+    margin-top: 10px;
+    /*margin-top: 8px;*/
+    /*margin-top: 12px;*/
+    /*margin-top: 11px;*/
+    margin-right: 0;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.item-shop__footer {
+    margin-top: 24px;
+    /*margin-top: 24px;*/
+    /*margin-top: 24px;*/
+    /*margin-top: 23px;*/
+}
+
+.item-shop__price {
+    row-gap: 4px;
+    margin-bottom: 9px;
+}
+
+.item-shop__price--old {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.item-shop__price--new {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.item-shop__btn {
+    width: 140px;
+    height: 48px;
+    padding: 17px 26px 17px 28px;
+}
+
+.footer {
+    padding-bottom: 36px;
+}
+
+.social {
+    margin-right: 1px;
+    margin-left: -1px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.social__list {
+    column-gap: 26.75px;
+    /*column-gap: 28px;*/
+    /*column-gap: 25.5px;*/
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__copyright {
+    margin-top: 49px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.popup {
+    width: 768px;
+    padding-top: 236px;
+    padding-right: 190px;
+    padding-left: 188px;
+}
+
+.popup__container {
+    padding-top: 55px;
+    padding-left: 30px;
+}
+
+.popup__form {
+    margin-top: 42px;
+}
+
+.label {
+    font-size: 13px;
+    line-height: 1;
+}
+
+.select {
+    padding-top: 17px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 18px;
+    font-size: 13px;
+    line-height: 1;
+    background-position: top 16px right 14px;
+    background-size: 8px 17px;
+}
+
+.popup__select {
+    margin-top: 9px;
+}
+
+.popup__form-group--2 {
+    margin-top: 34px;
+}
+
+.popup__radio-group {
+    column-gap: 34px;
+    margin-top: 9px;
+}
+
+.radio + .label {
+    margin-left: 0;
+    padding-left: 32px;
+    /*padding-left: 31px;*/
+    /*padding-left: 32px;*/
+}
+
+.radio + .label:before {
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
 }

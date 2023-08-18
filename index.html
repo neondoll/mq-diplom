@@ -32,7 +32,7 @@
 </header>
 <main class="main">
     <section class="trends">
-        <h2 class="trends__title section-title">Сейчас в тренде</h2>
+        <h2 class="trends__title main-section__title">Сейчас в тренде</h2>
         <div class="trends__list">
             <article class="trends__item item-trends item-trends--1">
                 <div class="item-trends__content">
@@ -190,7 +190,7 @@
         </section>
         <section class="sidebar">
             <section class="latest-posts">
-                <h2 class="latest-posts__title section-title">Новые посты</h2>
+                <h2 class="latest-posts__title sidebar-section__title">Новые посты</h2>
                 <div class="latest-posts__list">
                     <article class="post">
                         <img class="post__image" src="images/2.jpg" alt="Силуэт одинокого человека на пляже">
@@ -233,7 +233,7 @@
                 </div>
             </section>
             <section class="search">
-                <h2 class="search__title section-title visually-hidden">Форма поиска</h2>
+                <h2 class="search__title sidebar-section__title visually-hidden">Форма поиска</h2>
                 <form class="search__form">
                     <label class="search__label visually-hidden" for="search-input">Поле поиска</label>
                     <input class="search__input input" id="search-input" placeholder="Найти..." type="text">
@@ -243,7 +243,7 @@
                 </form>
             </section>
             <section class="subscribe">
-                <h2 class="subscribe__title section-title">Рассылка</h2>
+                <h2 class="subscribe__title sidebar-section__title">Рассылка</h2>
                 <form class="subscribe__form">
                     <label class="subscribe__label visually-hidden" for="subscribe-input">Email-адрес для
                         рассылки</label>
@@ -255,7 +255,7 @@
                 </form>
             </section>
             <section class="tags">
-                <h2 class="tags__title section-title">Теги</h2>
+                <h2 class="tags__title sidebar-section__title">Теги</h2>
                 <ul class="tags__list">
                     <li class="tags__item"><a class="tags__link" href="#">Fashion</a></li>
                     <li class="tags__item"><a class="tags__link" href="#">MuSiC</a></li>
@@ -268,7 +268,7 @@
                 </ul>
             </section>
             <section class="categories">
-                <h2 class="categories__title section-title">Темы</h2>
+                <h2 class="categories__title sidebar-section__title">Темы</h2>
                 <ul class="categories__list">
                     <li class="categories__item">
                         <a class="categories__link" href="#">Красота</a><span class="categories__sup">12</span>
@@ -293,10 +293,13 @@
         </section>
     </div>
     <section class="shop container">
-        <h2 class="shop__title section-title">Наши изделия</h2>
+        <h2 class="shop__title main-section__title">Наши изделия</h2>
         <div class="shop__list">
             <article class="shop__item item-shop">
-                <img class="item-shop__image" src="images/shop-item-mobile1.jpg" alt="Shop 1">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/shop-item-tablet1.jpg">
+                    <img class="item-shop__image" src="images/shop-item-mobile1.jpg" alt="Shop 1">
+                </picture>
                 <div class="item-shop__content">
                     <h3 class="item-shop__title">Подушки на диван</h3>
                     <p class="item-shop__text">Набор из двух подушек с модными принтами. Видео о создании
@@ -306,12 +309,15 @@
                             <span class="item-shop__price--old">1000 &#8381;</span>
                             <span class="item-shop__price--new">800 &#8381;</span>
                         </div>
-                        <button class="item-shop__btn btn">В магазин</button>
+                        <a class="item-shop__btn btn" href="#">В магазин</a>
                     </div>
                 </div>
             </article>
             <article class="shop__item item-shop">
-                <img class="item-shop__image" src="images/shop-item-mobile2.jpg" alt="Shop 2">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/shop-item-tablet2.jpg">
+                    <img class="item-shop__image" src="images/shop-item-mobile2.jpg" alt="Shop 2">
+                </picture>
                 <div class="item-shop__content">
                     <h3 class="item-shop__title">Кукла «Зайчик»</h3>
                     <p class="item-shop__text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
@@ -320,12 +326,15 @@
                         <div class="item-shop__price">
                             <span class="item-shop__price--new">3500 &#8381;</span>
                         </div>
-                        <button class="item-shop__btn btn">В магазин</button>
+                        <a class="item-shop__btn btn" href="#">В магазин</a>
                     </div>
                 </div>
             </article>
             <article class="shop__item item-shop">
-                <img class="item-shop__image" src="images/shop-item-mobile3.jpg" alt="Shop 3">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/shop-item-tablet3.jpg">
+                    <img class="item-shop__image" src="images/shop-item-mobile3.jpg" alt="Shop 3">
+                </picture>
                 <div class="item-shop__content">
                     <h3 class="item-shop__title">Шестиугольная рамка</h3>
                     <p class="item-shop__text">Необычная рамка для украшения дома из видео
@@ -335,7 +344,7 @@
                             <span class="item-shop__price--old">500 &#8381;</span>
                             <span class="item-shop__price--new">400 &#8381;</span>
                         </div>
-                        <button class="item-shop__btn btn">В магазин</button>
+                        <a class="item-shop__btn btn" href="#">В магазин</a>
                     </div>
                 </div>
             </article>
@@ -364,9 +373,10 @@
     </address>
     <a class="footer__copyright" href="#">Copyright © 2009–2019 City Blog LLC.</a>
 </footer>
+<!-- hidden -->
 <article class="popup container hidden">
     <section class="popup__container">
-        <h2 class="popup__title section-title">Ваш ФИДБЕк</h2>
+        <h2 class="popup__title main-section__title">Ваш ФИДБЕк</h2>
         <form class="popup__form">
             <div class="popup__form-group--1">
                 <label class="popup__label label" for="popup-select">Как часто вы заходите на сайт?</label>
