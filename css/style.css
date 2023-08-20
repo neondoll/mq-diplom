@@ -48,15 +48,16 @@ ul {
 }
 
 body {
-    width: 360px; /* mobile version */
+    /*width: 360px;  mobile version */
     font-family: "Open Sans", "Tahoma", sans-serif;
 }
 
 .header {
+    --header-bg-image: url("../images/banner-mobile.jpg");
     position: relative;
     width: 100%;
     background-color: #000000;
-    background-image: url("../images/banner-mobile.jpg");
+    background-image: var(--header-bg-image);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,7 +93,8 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    margin-right: 1px;
 }
 
 .navbar__link {
@@ -106,7 +108,9 @@ body {
     width: 269px;
 }
 
-.navbar__menu {}
+.navbar__menu {
+    margin-left: auto;
+}
 
 .menu-navbar {}
 
@@ -119,7 +123,8 @@ body {
 
 .menu-navbar__btn-close {
     position: relative;
-    margin: 8px 1px 8px 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .menu-navbar__btn-close:before, .menu-navbar__btn-close:after {
@@ -139,13 +144,24 @@ body {
     display: none;
 }
 
-.menu-navbar__item {}
+.menu-navbar__item {
+    font-size: 13px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.menu-navbar__link:hover {
+    text-decoration: underline;
+}
 
 .menu-navbar__link {}
 
 .header__title {
     max-width: 280px;
-    margin: 269px auto 0 auto;
+    margin-top: 269px;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 4px;
     font-size: 26px;
     font-weight: 700;
@@ -160,7 +176,9 @@ body {
     margin-bottom: 44px;
 }
 
-.trends {}
+.trends {
+    overflow-x: hidden;
+}
 
 .main-section__title, .sidebar-section__title {
     position: relative;
@@ -297,6 +315,7 @@ body {
 .card {
     display: flex;
     flex-direction: column;
+    row-gap: 13.7px;
     margin-right: 1px;
     padding-bottom: 21px;
     border-bottom: 3px solid #eeeeee;
@@ -310,10 +329,6 @@ body {
 
 .card__content {
     margin-left: -1px;
-}
-
-.card__image + .card__content {
-    margin-top: 13.7px;
 }
 
 .card__tags {}
