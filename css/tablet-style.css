@@ -1,9 +1,9 @@
 body {
-    width: 768px; /* tablet-version */
+    /*width: 768px;  tablet-version */
 }
 
 .header {
-    background-image: url("../images/banner-bg-tablet.jpg");
+    --header-bg-image: url("../images/banner-bg-tablet.jpg");
 }
 
 .container {
@@ -103,8 +103,11 @@ body {
     /*padding: 35px 60px 33px 31px;*/
 }
 
+.item-trends__categories {
+    margin-left: 2px;
+}
+
 .categories-item-trends__list {
-    padding-left: 2px;
     column-gap: 19px;
     /*column-gap: 20px;*/
     /*column-gap: 18px;*/
@@ -140,6 +143,7 @@ body {
 }
 
 .card {
+    row-gap: 16px;
     margin-right: 0;
     padding-bottom: 18px;
     /*padding-bottom: 19px;*/
@@ -173,15 +177,6 @@ body {
     /*margin-left: -4px;*/
     /*margin-left: -1px;*/
     /*margin-left: -1px;*/
-}
-
-.card__image + .card__content {
-    margin-top: 16px;
-    /*margin-top: 16px;*/
-    /*margin-top: 16px;*/
-    /*margin-top: 16px;*/
-    /*margin-top: 16px;*/
-    /*margin-top: 16px;*/
 }
 
 .card__tags {
