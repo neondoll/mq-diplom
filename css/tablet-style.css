@@ -662,8 +662,19 @@ body {
 }
 
 .popup__container {
+    position: relative;
     padding-top: 55px;
+    padding-right: 30px;
+    padding-bottom: 54px;
     padding-left: 30px;
+}
+
+.popup__container:before {
+    top: -36px;
+    right: 0;
+    width: 27px;
+    height: 27px;
+    background-size: 27px 27px;
 }
 
 .popup__form {
@@ -710,4 +721,31 @@ body {
     width: 25px;
     height: 25px;
     background-size: 25px 25px;
+}
+
+.popup__form-group--3 {
+    margin-top: 33px;
+}
+
+.textarea {
+    min-height: 131px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.popup__textarea {
+    margin-top: 11px;
+}
+
+.popup__btn {
+    height: 48px;
+    margin-top: 27px;
+    padding-top: 18px;
+    padding-right: 121px;
+    padding-bottom: 18px;
+    padding-left: 124px;
 }

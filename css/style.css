@@ -794,7 +794,13 @@ body {
     display: none;
 }
 
-.popup:before {
+.popup__container {
+    padding: 28px 27px 30px 23px;
+    background-color: #ffffff;
+}
+
+/* TODO: Исправить */
+.popup__container:before {
     content: "";
     position: absolute;
     top: 23px;
@@ -803,11 +809,6 @@ body {
     height: 28px;
     background-image: url("../svg/form-x.svg");
     background-size: 28px 28px;
-}
-
-.popup__container {
-    padding: 28px 27px 30px 23px;
-    background-color: #ffffff;
 }
 
 .popup__title {}
