@@ -36,14 +36,6 @@ body {
 
 .menu-navbar__list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    column-gap: 35.5px;
-    /*column-gap: 35px;*/
-    /*column-gap: 35px;*/
-    /*column-gap: 34px;*/
-    /*column-gap: 37px;*/
-    /*column-gap: 35px;*/
 }
 
 .header__title {
