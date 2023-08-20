@@ -415,9 +415,7 @@ body {
     object-position: center center;
 }
 
-.card__content {
-    margin-left: -1px;
-}
+.card__content {}
 
 .card__tags {}
 
@@ -485,17 +483,13 @@ body {
     /*column-gap: 13px;*/
     /*column-gap: 13px;*/
     /*column-gap: 14px;*/
-    margin-top: 23px;
+    margin-top: 20px;
     /*margin-top: 23px;*/
     /*margin-top: 20px;*/
     /*margin-top: 23px;*/
     /*margin-top: 20px;*/
     /*margin-top: 20px;*/
     margin-left: -2px;
-    /*margin-left: -2px;*/
-    /*margin-left: -2px;*/
-    /*margin-left: -2px;*/
-    /*margin-left: -2px;*/
 }
 
 .card__date {
@@ -515,11 +509,13 @@ body {
 
 .card__text {
     margin-top: 19px;
+    /*margin-top: 19px;*/
     /*margin-top: 18px;*/
     /*margin-top: 19px;*/
     /*margin-top: 19px;*/
     /*margin-top: 19px;*/
-    margin-left: 0;
+    margin-left: -1.5px;
+    /*margin-left: 0;*/
     /*margin-left: 0;*/
     /*margin-left: -4px;*/
     /*margin-left: -1px;*/
@@ -535,6 +531,7 @@ body {
     line-height: 1.428571428571429; /* 20px */
     text-indent: 0;
     /*text-indent: 0;*/
+    /*text-indent: 0;*/
     /*text-indent: -1px;*/
     /*text-indent: 0;*/
     /*text-indent: 0;*/
@@ -544,10 +541,12 @@ body {
 .text-card__paragraph:nth-child(n + 2) {
     margin-left: 0;
     /*margin-left: 0;*/
+    /*margin-left: 0;*/
     /*margin-left: 1px;*/
     /*margin-left: 0;*/
     /*margin-left: 0;*/
     text-indent: 0;
+    /*text-indent: 0;*/
     /*text-indent: 0;*/
     /*text-indent: 1px;*/
     /*text-indent: 0;*/
