@@ -42,7 +42,7 @@ body {
     max-width: 690px;
     margin-top: 125px;
     font-size: 45px;
-    line-height: 1.666; /* 74.97px */
+    line-height: calc(74.97 / 45); /* 74.97px - по макету */
 }
 
 .main {
@@ -52,6 +52,7 @@ body {
 .main-section__title {
     font-size: 20px;
     line-height: 1;
+    /*line-height: calc(29.15 / 20);*/ /* 29.15px - по макету */
 }
 
 .main-section__title:after {
@@ -110,10 +111,7 @@ body {
     /*column-gap: 20px;*/
 }
 
-.categories-item-trends__item {
-    font-size: 14px;
-    line-height: 1;
-}
+.categories-item-trends__item {}
 
 .item-trends__title {
     margin-top: 10px;
@@ -122,7 +120,7 @@ body {
     /*margin-top: 10px;*/
     /*margin-top: 10px;*/
     font-size: 20px;
-    line-height: 1.1995; /* 23.99px */
+    line-height: calc(23.99 / 20); /* 23.99px - по макету */
     text-indent: -1px;
 }
 
@@ -158,16 +156,13 @@ body {
     column-gap: 19px;
 }
 
-.tags-card__item {
-    font-size: 14px;
-    line-height: 1;
-}
+.tags-card__item {}
 
 .tags-card__link {}
 
 .card__title {
     font-size: 20px;
-    line-height: 1.1995; /* 23.99px */
+    line-height: calc(23.99 / 20); /* 23.99px - по макету */
 }
 
 .card__link {}
@@ -180,27 +175,12 @@ body {
     margin-top: 31px;
 }
 
-.card__date {
-    display: block;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1;
-    color: #888888;
-}
+.card__date {}
 
-.card__author {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000000;
-}
+.card__author {}
 
 .card__text {
     margin-top: 47px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.47;
-    color: #0f0d0e;
 }
 
 .text-card__paragraph:nth-child(n + 2) { margin-top: 11px; }
@@ -217,29 +197,7 @@ body {
     padding-left: 1px;
 }
 
-.sidebar-section__title {
-    position: relative;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    color: #0f0d0e;
-}
-
-.sidebar-section__title:after {
-    content: "";
-    position: absolute;
-    top: 26px;
-    right: 0;
-    left: 0;
-    z-index: 1;
-    display: block;
-    width: 66px;
-    height: 3px;
-    margin: 0 auto;
-    background-color: rgba(181, 159, 91, 0.4);
-}
+.sidebar-section__title {}
 
 .latest-posts__title {}
 
@@ -264,21 +222,10 @@ body {
 
 .post__content { margin-top: -2px; }
 
-.post__date {
-    display: block;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1;
-    color: rgba(0, 0, 0, 0.54);
-}
+.post__date {}
 
 .post__title {
     margin-top: 4px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.285;
-    text-transform: uppercase;
-    color: #000000;
 }
 
 .post__link:hover { color: #b59f5b; }
@@ -397,13 +344,7 @@ body {
     margin-top: 38px;
 }
 
-.tags__item {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #0f0d0e;
-}
+.tags__item {}
 
 .tags__link {
     display: block;
@@ -425,23 +366,14 @@ body {
 .categories__list { margin-top: 23px; }
 
 .categories__item {
-    display: block;
     padding: 14.5px 2px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000000;
-    border-bottom: 1px solid #eeeeee;
 }
 
 .categories__link:hover { color: #b59f5b; }
 
 .categories__sup {
     margin-left: 4px;
-    font-size: 12px;
-    line-height: inherit;
     vertical-align: super;
-    color: #b59f5b;
 }
 
 .shop {
@@ -463,22 +395,14 @@ body {
 .item-shop__title {
     font-size: 20px;
     line-height: 1;
+    /*line-height: calc(23.99 / 20);*/ /* 23.99px - по макету */
 }
 
-.item-shop__text {
-    font-size: 15px;
-    line-height: 22px;
-}
+.item-shop__text {}
 
-.item-shop__price--old {
-    font-size: 14px;
-    line-height: 1;
-}
+.item-shop__price--old {}
 
-.item-shop__price--new {
-    font-size: 20px;
-    line-height: 1;
-}
+.item-shop__price--new {}
 
 .footer { padding-bottom: 42px; }
 
@@ -509,11 +433,5 @@ body {
 }
 
 .footer__copyright {
-    display: block;
     margin-top: 74px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    color: #999999;
 }
