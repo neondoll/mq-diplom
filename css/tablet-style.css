@@ -92,14 +92,8 @@ body {
 .item-trends--1 {}
 
 .item-trends__content {
-    margin-top: 15px;
-    margin-right: 19px;
-    margin-bottom: 15px;
-    margin-left: 19px;
-    padding-top: 34px;
-    padding-right: 26px;
-    padding-bottom: 29px;
-    padding-left: 30px;
+    margin: 15px 19px;
+    padding: 34px 26px 29px 30px;
 }
 
 .item-trends__categories {}
@@ -227,9 +221,7 @@ body {
     column-gap: 18px;
 }
 
-.post__image {
-    width: 70px;
-}
+.post__image {}
 
 .post__content {}
 
@@ -303,9 +295,9 @@ body {
 .tags__title {}
 
 .tags__list {
-    margin-top: 39px;
     row-gap: 6px;
     column-gap: 5px;
+    margin-top: 39px;
 }
 
 .tags__item {}
@@ -327,9 +319,7 @@ body {
 }
 
 .categories__item {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 2px;
+    padding: 15px 2px;
 }
 
 .categories__link {}
@@ -427,11 +417,7 @@ body {
 }
 
 .popup__content {
-    position: relative;
-    padding-top: 52px;
-    padding-right: 30px;
-    padding-bottom: 54px;
-    padding-left: 30px;
+    padding: 52px 30px 54px;
 }
 
 .popup__content:before {
