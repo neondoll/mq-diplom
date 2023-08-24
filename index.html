@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MQ diplom</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tablet-style.css" media="(min-width: 641px)">
-    <link rel="stylesheet" href="css/desktop-style.css" media="(min-width: 1200px)">
 </head>
 <body>
 <header class="header">
@@ -92,106 +90,111 @@
     </section>
     <div class="common-content container">
         <section class="cards">
-            <article class="card">
-                <img class="card__image" src="images/last-post1.jpg" alt="Силуэт одинокого человека на пляже">
-                <div class="card__content">
-                    <ul class="card__tags tags-card__list">
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">Travel</a></li>
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">Health</a></li>
-                    </ul>
-                    <h2 class="card__title"><a class="card__link" href="#">10 мест, ради которых стоит проснуться на
-                        рассвете</a></h2>
-                    <div class="card__subtitle">
-                        <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
-                        <span class="card__author">Неизвестный автор</span>
+            <h2 class="cards__title main-section__title visually-hidden">Основные карточки</h2>
+            <div class="cards__list">
+                <article class="card">
+                    <img class="card__image" src="images/last-post1.jpg" alt="Силуэт одинокого человека на пляже">
+                    <div class="card__content">
+                        <ul class="card__tags tags-card__list">
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">Travel</a></li>
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">Health</a></li>
+                        </ul>
+                        <h2 class="card__title"><a class="card__link" href="#">10 мест, ради которых стоит проснуться на
+                            рассвете</a></h2>
+                        <div class="card__subtitle">
+                            <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
+                            <span class="card__author">Неизвестный автор</span>
+                        </div>
+                        <div class="card__text text-card">
+                            <p class="text-card__paragraph">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже
+                                ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
+                        </div>
                     </div>
-                    <div class="card__text text-card">
-                        <p class="text-card__paragraph">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,
-                            запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
+                </article>
+                <article class="card">
+                    <img class="card__image" src="images/last-post2.jpg" alt="Йога на пляже">
+                    <div class="card__content">
+                        <ul class="card__tags tags-card__list">
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">health</a></li>
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">lifestyle</a></li>
+                        </ul>
+                        <h2 class="card__title"><a class="card__link" href="#">ЙОга для начинающих в домашних
+                            условиях</a></h2>
+                        <div class="card__subtitle">
+                            <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
+                            <span class="card__author">Неизвестный автор</span>
+                        </div>
+                        <div class="card__text text-card">
+                            <p class="text-card__paragraph">Расскажем, какие упражнения выбрать и как сделать коврик для
+                                занятий йогой из того, что можно найти в шкафу.</p>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <img class="card__image" src="images/last-post2.jpg" alt="Йога на пляже">
-                <div class="card__content">
-                    <ul class="card__tags tags-card__list">
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">health</a></li>
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">lifestyle</a></li>
-                    </ul>
-                    <h2 class="card__title"><a class="card__link" href="#">ЙОга для начинающих в домашних
-                        условиях</a></h2>
-                    <div class="card__subtitle">
-                        <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
-                        <span class="card__author">Неизвестный автор</span>
+                </article>
+                <article class="card">
+                    <img class="card__image" src="images/last-post3.jpg" alt="Девушка на летнем концерте">
+                    <div class="card__content">
+                        <ul class="card__tags tags-card__list">
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">music</a></li>
+                        </ul>
+                        <h2 class="card__title"><a class="card__link" href="#">Лучшие музыкальные фестивали этого
+                            лета</a></h2>
+                        <div class="card__subtitle">
+                            <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
+                            <span class="card__author">Неизвестный автор</span>
+                        </div>
+                        <div class="card__text text-card">
+                            <p class="text-card__paragraph">Лето на носу, а с ним и музыкальные фестивали. На каком же
+                                из них вы разобьёте свою палатку?</p>
+                            <p class="text-card__paragraph">Мы составили список лучших летних фестивалей по всему
+                                миру.</p>
+                        </div>
                     </div>
-                    <div class="card__text text-card">
-                        <p class="text-card__paragraph">Расскажем, какие упражнения выбрать и как сделать коврик для
-                            занятий йогой из того, что можно найти в шкафу.</p>
+                </article>
+                <article class="card">
+                    <img class="card__image" src="images/last-post4.jpg" alt="Красивый обед на деревянном столе">
+                    <div class="card__content">
+                        <ul class="card__tags tags-card__list">
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">LYFESTYLE</a></li>
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">FOOD</a></li>
+                        </ul>
+                        <h2 class="card__title"><a class="card__link" href="#">Наукоёмкий подход к кулинарии</a></h2>
+                        <div class="card__subtitle">
+                            <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
+                            <span class="card__author">Неизвестный автор</span>
+                        </div>
+                        <div class="card__text text-card">
+                            <p class="text-card__paragraph">Узнаем основы проектирования новых пищевых и около-пищевых
+                                опытов, вскроем физику, химию и микробиологию еды.</p>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="card">
-                <img class="card__image" src="images/last-post3.jpg" alt="Девушка на летнем концерте">
-                <div class="card__content">
-                    <ul class="card__tags tags-card__list">
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">music</a></li>
-                    </ul>
-                    <h2 class="card__title"><a class="card__link" href="#">Лучшие музыкальные фестивали этого
-                        лета</a></h2>
-                    <div class="card__subtitle">
-                        <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
-                        <span class="card__author">Неизвестный автор</span>
+                </article>
+                <article class="card">
+                    <img class="card__image" src="images/last-post5.jpg" alt="Подушка с принтом">
+                    <div class="card__content">
+                        <ul class="card__tags tags-card__list">
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">Lifestyle</a></li>
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">INTERIOR</a></li>
+                            <li class="tags-card__item"><a class="tags-card__link" href="#">art</a></li>
+                        </ul>
+                        <h2 class="card__title"><a class="card__link" href="#">делаем модные принты на подушках для
+                            интерьера</a></h2>
+                        <div class="card__subtitle">
+                            <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
+                            <span class="card__author">Неизвестный автор</span>
+                        </div>
+                        <div class="card__text text-card">
+                            <p class="text-card__paragraph">Подушки для дивана целесообразнее заказать в съемных чехлах
+                                на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в
+                                химчистку.</p>
+                        </div>
                     </div>
-                    <div class="card__text text-card">
-                        <p class="text-card__paragraph">Лето на носу, а с ним и музыкальные фестивали. На каком же из
-                            них вы разобьёте свою палатку?</p>
-                        <p class="text-card__paragraph">Мы составили список лучших летних фестивалей по всему миру.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <img class="card__image" src="images/last-post4.jpg" alt="Красивый обед на деревянном столе">
-                <div class="card__content">
-                    <ul class="card__tags tags-card__list">
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">LYFESTYLE</a></li>
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">FOOD</a></li>
-                    </ul>
-                    <h2 class="card__title"><a class="card__link" href="#">Наукоёмкий подход к кулинарии</a></h2>
-                    <div class="card__subtitle">
-                        <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
-                        <span class="card__author">Неизвестный автор</span>
-                    </div>
-                    <div class="card__text text-card">
-                        <p class="text-card__paragraph">Узнаем основы проектирования новых пищевых и около-пищевых
-                            опытов, вскроем физику, химию и микробиологию еды.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <img class="card__image" src="images/last-post5.jpg" alt="Подушка с принтом">
-                <div class="card__content">
-                    <ul class="card__tags tags-card__list">
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">Lifestyle</a></li>
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">INTERIOR</a></li>
-                        <li class="tags-card__item"><a class="tags-card__link" href="#">art</a></li>
-                    </ul>
-                    <h2 class="card__title"><a class="card__link" href="#">делаем модные принты на подушках для
-                        интерьера</a></h2>
-                    <div class="card__subtitle">
-                        <time class="card__date" datetime="2019-06-10">10 июня 2019</time>
-                        <span class="card__author">Неизвестный автор</span>
-                    </div>
-                    <div class="card__text text-card">
-                        <p class="text-card__paragraph">Подушки для дивана целесообразнее заказать в съемных чехлах на
-                            молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в
-                            химчистку.</p>
-                    </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
         <section class="sidebar">
+            <h2 class="sidebar__title main-section__title visually-hidden">Дополнительная информация</h2>
             <section class="latest-posts">
-                <h2 class="latest-posts__title sidebar-section__title">Новые посты</h2>
+                <h3 class="latest-posts__title sidebar-section__title">Новые посты</h3>
                 <div class="latest-posts__list">
                     <article class="post">
                         <img class="post__image" src="images/2.jpg" alt="Силуэт одинокого человека на пляже">
@@ -234,7 +237,7 @@
                 </div>
             </section>
             <section class="search">
-                <h2 class="search__title sidebar-section__title visually-hidden">Форма поиска</h2>
+                <h3 class="search__title sidebar-section__title visually-hidden">Форма поиска</h3>
                 <form class="search__form">
                     <label class="search__label label visually-hidden" for="search-input">Поле поиска</label>
                     <input class="search__input input" id="search-input" placeholder="Найти..." type="text">
@@ -244,7 +247,7 @@
                 </form>
             </section>
             <section class="subscribe">
-                <h2 class="subscribe__title sidebar-section__title">Рассылка</h2>
+                <h3 class="subscribe__title sidebar-section__title">Рассылка</h3>
                 <form class="subscribe__form">
                     <label class="subscribe__label label visually-hidden" for="subscribe-input">Email-адрес для
                         рассылки</label>
@@ -256,7 +259,7 @@
                 </form>
             </section>
             <section class="tags">
-                <h2 class="tags__title sidebar-section__title">Теги</h2>
+                <h3 class="tags__title sidebar-section__title">Теги</h3>
                 <ul class="tags__list">
                     <li class="tags__item"><a class="tags__link" href="#">Fashion</a></li>
                     <li class="tags__item"><a class="tags__link" href="#">MuSiC</a></li>
@@ -269,7 +272,7 @@
                 </ul>
             </section>
             <section class="categories">
-                <h2 class="categories__title sidebar-section__title">Темы</h2>
+                <h3 class="categories__title sidebar-section__title">Темы</h3>
                 <ul class="categories__list">
                     <li class="categories__item">
                         <a class="categories__link" href="#">Красота</a><span class="categories__sup">12</span>
@@ -378,7 +381,7 @@
     <a class="footer__copyright" href="#">Copyright © 2009–2019 City Blog LLC.</a>
 </footer>
 <!-- hidden -->
-<article class="popup hidden">
+<div class="popup hidden">
     <section class="popup__dialog">
         <div class="popup__content">
             <h2 class="popup__title main-section__title">Ваш ФИДБЕк</h2>
@@ -425,6 +428,6 @@
             </form>
         </div>
     </section>
-</article>
+</div>
 </body>
 </html>
