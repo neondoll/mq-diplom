@@ -1,7 +1,3 @@
-/* mobile version  - 0px    - 640px
-   tablet version  - 641px  - 1199px
-   desktop version - 1200px - ... */
-
 @font-face {
     font-family: "Open Sans";
     font-style: normal;
@@ -80,7 +76,6 @@ body {
 .container {
     box-sizing: border-box;
     width: 100%;
-    /*max-width: 360px;*/ /* Для мобильных устройств требуется резиновая верстка */
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -945,10 +940,6 @@ body {
 @media (min-width: 641px) {
     .header {
         --header-bg-image: url("../images/banner-bg-tablet.jpg");
-    }
-
-    .container {
-        /*max-width: 768px;*/ /* Для планшетов требуется резиновая верстка */
     }
 
     .header__container {
