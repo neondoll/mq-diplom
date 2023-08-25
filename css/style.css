@@ -33,20 +33,16 @@ body, fieldset, h1, h2, h3, input, p, ul {
 
 button, fieldset, input, legend, textarea, ul {
     padding: 0;
+    padding-block: 0;
+    padding-inline: 0;
 }
 
-fieldset, input, textarea {
+button, fieldset, input, textarea {
     border: 0;
 }
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
-}
-
-select::-ms-expand {
-    display: none;
 }
 
 ul {
@@ -62,7 +58,7 @@ body {
     position: relative;
     width: 100%;
     background-color: #000000;
-    background-image: var(--header-bg-image);
+    background-image: var(--header-bg-image, url("../images/banner-bg.jpg"));
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -176,7 +172,7 @@ body {
     overflow-x: hidden;
 }
 
-.main-section__title, .sidebar-section__title {
+.main-section-title, .sidebar-section-title {
     position: relative;
     font-size: 16px;
     font-weight: 700;
@@ -186,7 +182,7 @@ body {
     color: #0f0d0e;
 }
 
-.main-section__title:after, .sidebar-section__title:after {
+.main-section-title:after, .sidebar-section-title:after {
     content: "";
     position: absolute;
     top: 28px;
@@ -217,7 +213,7 @@ body {
     width: 100%;
     min-height: 231px;
     background-color: #000000;
-    background-image: var(--item-trends-bg-image);
+    background-image: var(--item-trends-bg-image, none);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,7 +241,7 @@ body {
     border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
-.categories-item-trends__list {
+.categories-item-trends {
     display: flex;
     flex-wrap: wrap;
     column-gap: 18px;
@@ -310,7 +306,7 @@ body {
     margin: -1px;
     padding: 0;
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     overflow: hidden;
 }
 
@@ -332,7 +328,7 @@ body {
     object-position: center center;
 }
 
-.tags-card__list {
+.tags-card {
     display: flex;
     flex-wrap: wrap;
     column-gap: 18px;
@@ -758,7 +754,7 @@ body {
     display: block;
     width: 20px;
     height: 20px;
-    background-image: var(--social-icon-bg-image);
+    background-image: var(--social-icon-bg-image, none);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -812,26 +808,39 @@ body {
 }
 
 .popup__content {
-    position: relative;
-    padding: 28px 26px 30px 24px;
     background-color: #ffffff;
 }
 
-.popup__content:before {
-    --btn-cloce-width: 27px;
-    --btn-cloce-height: 27px;
-    content: "";
-    position: absolute;
-    top: -32px;
-    right: 1px;
-    width: var(--btn-cloce-width);
-    height: var(--btn-cloce-height);
-    background-image: url("../svg/form-x.svg");
-    background-size: var(--btn-cloce-width) var(--btn-cloce-height);
+.popup__header, .popup__form {
+    padding-top: 28px;
+    padding-right: 26px;
+    padding-left: 24px;
+}
+
+.popup__header {
+    position: relative;
+    padding-bottom: 37px;
 }
 
 .popup__form {
-    margin-top: 37px;
+    padding-bottom: 30px;
+}
+
+.popup__header + .popup__form {
+    padding-top: 0;
+}
+
+.popup__btn-close {
+    --btn-cloce-width: 27px;
+    --btn-cloce-height: 27px;
+    position: absolute;
+    top: -32px;
+    right: 1px;
+    width: var(--btn-cloce-width, 27px);
+    height: var(--btn-cloce-height, 27px);
+    background-color: transparent;
+    background-image: url("../svg/form-x.svg");
+    background-size: var(--btn-cloce-width, 27px) var(--btn-cloce-height, 27px);
 }
 
 .popup__select {
@@ -858,7 +867,6 @@ body {
 }
 
 .radio + .label:before {
-    --radio-icon-image: url("../svg/form-empty-circle.svg");
     --radio-icon-width: 25px;
     --radio-icon-height: 25px;
     content: "";
@@ -866,17 +874,17 @@ body {
     top: 50%;
     left: 0;
     display: inline-block;
-    width: var(--radio-icon-width);
-    height: var(--radio-icon-height);
-    background-image: var(--radio-icon-image);
+    width: var(--radio-icon-width, 25px);
+    height: var(--radio-icon-height, 25px);
+    background-image: url("../svg/form-empty-circle.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: var(--radio-icon-width) var(--radio-icon-height);
+    background-size: var(--radio-icon-width, 25px) var(--radio-icon-height, 25px);
     transform: translateY(-50%);
 }
 
 .radio:checked + .label:before {
-    --radio-icon-image: url("../svg/form-circle.svg");
+    background-image: url("../svg/form-circle.svg");
 }
 
 .popup__form-group--3 {
@@ -977,11 +985,11 @@ body {
         margin-bottom: 51px;
     }
 
-    .main-section__title {
+    .main-section-title {
         font-size: 18px;
     }
 
-    .main-section__title:after {
+    .main-section-title:after {
         top: 30px;
     }
 
@@ -1046,11 +1054,11 @@ body {
         flex: 0 0 271px;
     }
 
-    .sidebar-section__title {
+    .sidebar-section-title {
         font-size: 14px;
     }
 
-    .sidebar-section__title:after {
+    .sidebar-section-title:after {
         top: 26px;
     }
 
@@ -1120,11 +1128,17 @@ body {
         padding-left: 13px;
     }
 
-    .popup__content {
-        padding: 52px 30px 54px;
+    .popup__header, .popup__form {
+        padding-top: 52px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
-    .popup__content:before {
+    .popup__form {
+        padding-bottom: 54px;
+    }
+
+    .popup__btn-close {
         top: -36px;
         right: 0;
     }
@@ -1245,11 +1259,11 @@ body {
         margin-bottom: 64px;
     }
 
-    .main-section__title {
+    .main-section-title {
         font-size: 20px;
     }
 
-    .main-section__title:after {
+    .main-section-title:after {
         top: 31px;
     }
 
@@ -1366,19 +1380,19 @@ body {
         padding-left: 15px;
     }
 
-    .popup__content {
+    .popup__header, .popup__form {
         padding-top: 51px;
     }
 
-    .popup__content:before {
+    .popup__header {
+        padding-bottom: 36px;
+    }
+
+    .popup__btn-close {
         --btn-cloce-width: 18px;
         --btn-cloce-height: 18px;
         top: -26px;
         right: -2px;
-    }
-
-    .popup__form {
-        margin-top: 36px;
     }
 
     .popup__radio-group {
